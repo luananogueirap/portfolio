@@ -10,6 +10,7 @@ Portfólio profissional de Luana Nogueira, desenvolvedora Backend e Full Stack e
 - visualização ampliada dos diagramas;
 - download dos arquivos editáveis do Excalidraw;
 - currículo em PDF e contatos profissionais.
+- player retrô interativo com equalizador, faixas fictícias e efeitos sonoros sutis.
 
 ## Tecnologias do portfólio
 
