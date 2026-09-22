@@ -2193,6 +2193,15 @@ body::after {
   transition: background 180ms ease;
 }
 
+.album-tile img {
+  position: relative;
+  z-index: 1;
+  width: 47px;
+  height: 47px;
+  object-fit: contain;
+  filter: drop-shadow(2px 2px 0 rgba(44, 18, 49, 0.3));
+}
+
 .album-tile::after {
   position: absolute;
   inset: 7px;
@@ -2202,6 +2211,7 @@ body::after {
 }
 
 .album-tile small {
+  z-index: 2;
   position: absolute;
   right: 7px;
   bottom: 5px;

@@ -68,28 +68,39 @@ const player = document.querySelector('[data-player]');
 if (player) {
   const tracks = [
     {
-      title: 'Luana Nogueira - Coding Essentials (2000s Mix)',
-      meta: 'portfolio radio · original edit',
-      duration: 222,
+      title: 'JavaScript — Interface Essentials',
+      meta: 'lógica & interações · stack 01',
+      duration: 214,
       skin: 'pink',
+      icon: './assets/stack-icons/javascript.svg',
     },
     {
-      title: 'API After Dark',
-      meta: 'Node.js night drive · track 02',
+      title: 'Node.js — API After Dark',
+      meta: 'servidor & regras de negócio · stack 02',
       duration: 198,
       skin: 'orange',
+      icon: './assets/stack-icons/nodejs.svg',
     },
     {
-      title: 'Pink Pixels & Mongo Dreams',
-      meta: 'full stack edit · track 03',
-      duration: 245,
+      title: 'React — Component Waves',
+      meta: 'interfaces & estado · stack 03',
+      duration: 226,
       skin: 'berry',
+      icon: './assets/stack-icons/react.svg',
     },
     {
-      title: 'Deploy at Midnight',
-      meta: 'Vercel outro · track 04',
-      duration: 176,
+      title: 'MongoDB — Document Dreams',
+      meta: 'NoSQL & Mongoose · stack 04',
+      duration: 205,
       skin: 'pink',
+      icon: './assets/stack-icons/mongodb.svg',
+    },
+    {
+      title: 'MySQL — Relational Groove',
+      meta: 'dados & Sequelize · stack 05',
+      duration: 232,
+      skin: 'orange',
+      icon: './assets/stack-icons/mysql.svg',
     },
   ];
 
@@ -102,7 +113,8 @@ if (player) {
   const playButton = player.querySelector('[data-player-action="toggle"]');
   const playIcon = player.querySelector('[data-play-icon]');
   const playLabel = player.querySelector('[data-play-label]');
-  const albumIndex = player.querySelector('.album-tile small');
+  const albumIndex = player.querySelector('[data-stack-index]');
+  const stackIcon = player.querySelector('[data-stack-icon]');
 
   let trackIndex = 0;
   let elapsed = 0;
@@ -138,6 +150,7 @@ if (player) {
     meta.textContent = track.meta;
     duration.textContent = formatTime(track.duration);
     albumIndex.textContent = String(trackIndex + 1).padStart(2, '0');
+    stackIcon.src = track.icon;
     player.dataset.skin = track.skin;
   };
 
@@ -147,7 +160,9 @@ if (player) {
     currentTime.textContent = formatTime(elapsed);
     progress.style.width = `${percent}%`;
     player.classList.toggle('is-playing', isPlaying);
-    state.textContent = isPlaying ? 'PLAYING / 128 KBPS' : 'PAUSED / 128 KBPS';
+    const stackNumber = String(trackIndex + 1).padStart(2, '0');
+    const stackTotal = String(tracks.length).padStart(2, '0');
+    state.textContent = `${isPlaying ? 'PLAYING' : 'PAUSED'} / STACK ${stackNumber} OF ${stackTotal}`;
     playIcon.textContent = isPlaying ? 'Ⅱ' : '▶';
     playLabel.textContent = isPlaying ? 'PAUSE' : 'PLAY';
     playButton.setAttribute('aria-pressed', String(isPlaying));
