@@ -22,6 +22,13 @@ Portfólio profissional de Luana Nogueira, desenvolvedora Backend e Full Stack e
 - JavaScript;
 - HTML, CSS e JavaScript puros, sem etapa de build.
 
+## Organização dos assets
+
+- `assets/images/`: fotos, logos e diagramas dos projetos;
+- `assets/stack-icons/`: ícones das tecnologias exibidas no carrossel e na rádio;
+- `diagrams/`: arquivos editáveis dos desenhos em formato Excalidraw;
+- `favicon.svg`, `social-card.svg` e `curriculo-luana-nogueira.pdf`: arquivos públicos da página.
+
 ## Abrir localmente
 
 Abra o arquivo `index.html` com dois cliques. A página funciona diretamente no navegador.
