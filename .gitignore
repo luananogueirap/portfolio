@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.vercel/
+.env
+.DS_Store
+tmp/
+
+# Arquivos-fonte mantidos localmente; as cópias publicáveis ficam em public/.
+curric.pdf
+get a pet.png
+toughts.png

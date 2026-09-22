@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f9eef3"/>
+  <path d="M0 88h1200M0 542h1200" stroke="#462636" stroke-width="3"/>
+  <circle cx="1050" cy="120" r="170" fill="#f6d8e8" stroke="#462636" stroke-width="3"/>
+  <circle cx="1110" cy="90" r="48" fill="#e7a323" stroke="#462636" stroke-width="3"/>
+  <text x="80" y="220" font-family="Georgia,serif" font-size="82" font-weight="700" fill="#462636">Luana Nogueira</text>
+  <text x="80" y="305" font-family="Arial,sans-serif" font-size="42" fill="#a84d75">Backend &amp; Full Stack Developer</text>
+  <rect x="80" y="370" width="440" height="62" rx="31" fill="#462636"/>
+  <text x="116" y="412" font-family="monospace" font-size="26" fill="#fff8f1">Node · React · SQL · MongoDB</text>
+  <text x="80" y="590" font-family="monospace" font-size="22" fill="#462636">portfolio • projetos • arquitetura</text>
+</svg>
