@@ -11,7 +11,9 @@ Portfólio profissional de Luana Nogueira, desenvolvedora Backend e Full Stack e
 - download dos arquivos editáveis do Excalidraw;
 - currículo em PDF e contatos profissionais.
 - rádio retrô interativa com equalizador, efeitos sonoros sutis e uma faixa para cada tecnologia da stack;
-- ícones de JavaScript, Node.js, React, MongoDB e MySQL fornecidos pelo projeto [Devicon](https://github.com/devicons/devicon).
+- carrossel integrado ao visual Y2K com ícones de JavaScript, Node.js, React, Express, Handlebars, MongoDB, MySQL, Git, Vercel e Docker;
+- conteúdo completo em português, inglês e espanhol, selecionável pelo menu;
+- ícones das tecnologias fornecidos pelo projeto [Devicon](https://github.com/devicons/devicon).
 
 ## Tecnologias do portfólio
 

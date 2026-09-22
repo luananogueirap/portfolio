@@ -64,7 +64,7 @@
     </script>
   </head>
   <body>
-    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <a class="skip-link" href="#conteudo" data-skip-link>Pular para o conteúdo</a>
 
     <div class="page-shell">
       <header class="site-header" data-header>
@@ -74,7 +74,7 @@
         </a>
 
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">
-          <span class="sr-only">Abrir menu</span>
+          <span class="sr-only" data-menu-label>Abrir menu</span>
           <span></span><span></span>
         </button>
 
@@ -83,6 +83,11 @@
           <a href="#projetos">Projetos</a>
           <a href="#arquitetura">Arquitetura</a>
           <a class="nav-cta" href="#contato">Vamos conversar</a>
+          <div class="language-switcher" role="group" aria-label="Selecionar idioma">
+            <button type="button" data-language="pt" aria-pressed="true">PT</button>
+            <button type="button" data-language="en" aria-pressed="false">EN</button>
+            <button type="button" data-language="es" aria-pressed="false">ES</button>
+          </div>
         </nav>
       </header>
 
@@ -128,7 +133,7 @@
                   <small data-stack-index>01</small>
                 </div>
                 <div class="track-data" aria-live="polite">
-                  <span class="now-playing">NOW PLAYING · STACK FM</span>
+                  <span class="now-playing" data-player-kicker>NOW PLAYING · STACK FM</span>
                   <strong data-track-title>JavaScript — Interface Essentials</strong>
                   <small data-track-meta>lógica & interações · stack 01</small>
                 </div>
@@ -159,7 +164,7 @@
 
               <div class="player-status">
                 <span data-current-time>00:00</span>
-                <span data-player-state>PLAYING / STACK 01 OF 05</span>
+                <span data-player-state>PLAYING / STACK 01 OF 10</span>
                 <span data-duration>03:34</span>
               </div>
 
@@ -186,13 +191,32 @@
           </div>
         </section>
 
-        <section class="marquee" aria-label="Tecnologias">
+        <section class="marquee" aria-label="Tecnologias" data-technologies-carousel>
           <div class="marquee-track">
-            <span>JavaScript</span><i>✦</i><span>Node.js</span><i>✦</i><span>React</span><i>✦</i>
-            <span>Express</span><i>✦</i><span>MySQL</span><i>✦</i><span>MongoDB</span><i>✦</i>
-            <span>APIs REST</span><i>✦</i><span>Git</span><i>✦</i>
-            <span aria-hidden="true">JavaScript</span><i aria-hidden="true">✦</i><span aria-hidden="true">Node.js</span><i aria-hidden="true">✦</i><span aria-hidden="true">React</span><i aria-hidden="true">✦</i>
-            <span aria-hidden="true">Express</span><i aria-hidden="true">✦</i><span aria-hidden="true">MySQL</span><i aria-hidden="true">✦</i><span aria-hidden="true">MongoDB</span><i aria-hidden="true">✦</i>
+            <div class="marquee-group">
+              <span class="tech-marquee-item"><span class="tech-marquee-icon"><img src="./assets/stack-icons/javascript.svg" alt="" /></span>JavaScript</span>
+              <span class="tech-marquee-item"><span class="tech-marquee-icon"><img src="./assets/stack-icons/nodejs.svg" alt="" /></span>Node.js</span>
+              <span class="tech-marquee-item"><span class="tech-marquee-icon"><img src="./assets/stack-icons/react.svg" alt="" /></span>React</span>
+              <span class="tech-marquee-item"><span class="tech-marquee-icon"><img src="./assets/stack-icons/express.svg" alt="" /></span>Express</span>
+              <span class="tech-marquee-item"><span class="tech-marquee-icon"><img src="./assets/stack-icons/handlebars.svg" alt="" /></span>Handlebars</span>
+              <span class="tech-marquee-item"><span class="tech-marquee-icon"><img src="./assets/stack-icons/mongodb.svg" alt="" /></span>MongoDB</span>
+              <span class="tech-marquee-item"><span class="tech-marquee-icon"><img src="./assets/stack-icons/mysql.svg" alt="" /></span>MySQL</span>
+              <span class="tech-marquee-item"><span class="tech-marquee-icon"><img src="./assets/stack-icons/git.svg" alt="" /></span>Git</span>
+              <span class="tech-marquee-item"><span class="tech-marquee-icon"><img src="./assets/stack-icons/vercel.svg" alt="" /></span>Vercel</span>
+              <span class="tech-marquee-item"><span class="tech-marquee-icon"><img src="./assets/stack-icons/docker.svg" alt="" /></span>Docker</span>
+            </div>
+            <div class="marquee-group" aria-hidden="true">
+              <span class="tech-marquee-item"><span class="tech-marquee-icon"><img src="./assets/stack-icons/javascript.svg" alt="" /></span>JavaScript</span>
+              <span class="tech-marquee-item"><span class="tech-marquee-icon"><img src="./assets/stack-icons/nodejs.svg" alt="" /></span>Node.js</span>
+              <span class="tech-marquee-item"><span class="tech-marquee-icon"><img src="./assets/stack-icons/react.svg" alt="" /></span>React</span>
+              <span class="tech-marquee-item"><span class="tech-marquee-icon"><img src="./assets/stack-icons/express.svg" alt="" /></span>Express</span>
+              <span class="tech-marquee-item"><span class="tech-marquee-icon"><img src="./assets/stack-icons/handlebars.svg" alt="" /></span>Handlebars</span>
+              <span class="tech-marquee-item"><span class="tech-marquee-icon"><img src="./assets/stack-icons/mongodb.svg" alt="" /></span>MongoDB</span>
+              <span class="tech-marquee-item"><span class="tech-marquee-icon"><img src="./assets/stack-icons/mysql.svg" alt="" /></span>MySQL</span>
+              <span class="tech-marquee-item"><span class="tech-marquee-icon"><img src="./assets/stack-icons/git.svg" alt="" /></span>Git</span>
+              <span class="tech-marquee-item"><span class="tech-marquee-icon"><img src="./assets/stack-icons/vercel.svg" alt="" /></span>Vercel</span>
+              <span class="tech-marquee-item"><span class="tech-marquee-icon"><img src="./assets/stack-icons/docker.svg" alt="" /></span>Docker</span>
+            </div>
           </div>
         </section>
 
@@ -215,6 +239,7 @@
 
             <div class="about-note reveal">
               <img src="gato.gif" alt="Gato digitando em um computador" width="300">
+            </div>
           </div>
         </section>
 
@@ -405,7 +430,7 @@
           <a href="https://github.com/luananogueirap" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/luana-nogueira-6949253b4" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
-        <p>Desenhado & desenvolvido por Luana · <span data-year></span></p>
+        <p><span data-footer-copy>Desenhado & desenvolvido por Luana</span> · <span data-year></span></p>
       </footer>
     </div>
 
