@@ -1181,9 +1181,9 @@ a:focus-visible {
 
 .contact-photo {
   position: absolute;
-  right: clamp(18px, 5vw, 64px);
-  bottom: 28px;
-  width: 178px;
+  right: 24px;
+  bottom: 20px;
+  width: 145px;
   padding: 8px 8px 10px;
   margin: 0;
   border: 1.5px solid var(--ink);
@@ -1191,6 +1191,16 @@ a:focus-visible {
   box-shadow: 5px 5px 0 var(--ink), 0 0 0 2px rgba(255, 255, 255, 0.7) inset;
   transform: rotate(3deg);
   z-index: 1;
+}
+
+@media (max-width: 1050px) {
+  .contact-photo {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: min(178px, 62vw);
+    margin: 38px auto 0;
+  }
 }
 
 .contact-photo::before {
