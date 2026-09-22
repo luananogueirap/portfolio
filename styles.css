@@ -2531,6 +2531,16 @@ body::after {
 }
 
 /* Seletor de idioma */
+.site-header {
+  position: fixed !important;
+  top: 12px !important;
+  z-index: 30;
+}
+
+html {
+  scroll-padding-top: 96px;
+}
+
 .language-switcher {
   display: inline-flex;
   padding: 3px;

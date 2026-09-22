@@ -19,6 +19,7 @@ menu.querySelectorAll('a').forEach((link) => {
 window.addEventListener('scroll', () => {
   header.classList.toggle('is-scrolled', window.scrollY > 24);
 }, { passive: true });
+header.classList.toggle('is-scrolled', window.scrollY > 24);
 
 document.querySelector('[data-year]').textContent = new Date().getFullYear();
 
