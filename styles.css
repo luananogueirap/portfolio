@@ -2533,14 +2533,14 @@ body::after {
 
 /* Seletor de idioma */
 .site-header {
-  position: sticky !important;
+  position: fixed !important;
   top: 12px !important;
   right: auto;
-  left: auto;
-  margin-inline: auto;
+  left: 50%;
+  margin-inline: 0;
   z-index: 30;
   background: linear-gradient(180deg, #fffaff 0%, #f5d4ee 100%) !important;
-  transform: none !important;
+  transform: translateX(-50%) !important;
 }
 
 html {
