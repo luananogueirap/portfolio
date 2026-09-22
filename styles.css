@@ -1946,6 +1946,7 @@ body::after {
 
 @media (max-width: 800px) {
   .site-header {
+    position: fixed !important;
     width: calc(100% - 34px);
   }
 
