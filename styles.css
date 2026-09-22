@@ -2535,6 +2535,7 @@ body::after {
   position: fixed !important;
   top: 12px !important;
   z-index: 30;
+  background: linear-gradient(180deg, #fffaff 0%, #f5d4ee 100%) !important;
 }
 
 html {
