@@ -2539,7 +2539,7 @@ body::after {
 
 /* Seletor de idioma */
 .site-header {
-  position: fixed !important;
+  position: absolute !important;
   top: 12px !important;
   right: auto;
   left: 50%;
@@ -2551,6 +2551,12 @@ body::after {
 
 html {
   scroll-padding-top: 96px;
+}
+
+@media (max-width: 800px) {
+  .site-header {
+    position: fixed !important;
+  }
 }
 
 .language-switcher {
