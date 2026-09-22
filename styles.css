@@ -1179,6 +1179,52 @@ a:focus-visible {
   transform: rotate(12deg);
 }
 
+.contact-photo {
+  position: absolute;
+  right: clamp(18px, 5vw, 64px);
+  bottom: 28px;
+  width: 178px;
+  padding: 8px 8px 10px;
+  margin: 0;
+  border: 1.5px solid var(--ink);
+  background: #fff7fb;
+  box-shadow: 5px 5px 0 var(--ink), 0 0 0 2px rgba(255, 255, 255, 0.7) inset;
+  transform: rotate(3deg);
+  z-index: 1;
+}
+
+.contact-photo::before {
+  position: absolute;
+  top: -10px;
+  left: 24px;
+  width: 56px;
+  height: 18px;
+  content: '';
+  background: rgba(245, 194, 231, 0.82);
+  border: 1px solid rgba(70, 38, 54, 0.25);
+  transform: rotate(-5deg);
+}
+
+.contact-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 58% 61%;
+  border: 1px solid var(--line);
+  filter: saturate(0.9) contrast(1.03);
+}
+
+.contact-photo figcaption {
+  padding-top: 8px;
+  color: var(--berry-dark);
+  font-family: var(--font-typewriter);
+  font-size: 0.52rem;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .site-footer {
   display: grid;
   width: min(calc(100% - 48px), var(--max-width));
@@ -2591,5 +2637,13 @@ body::after {
   .tech-marquee-icon img {
     width: 16px;
     height: 16px;
+  }
+
+  .contact-photo {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: min(178px, 62vw);
+    margin: 38px auto 0;
   }
 }
