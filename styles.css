@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'SquareFont';
+  src: url('./assets/fonts/SquareFont.ttf') format('truetype');
+  font-display: swap;
+}
+
 :root {
   --ink: #462636;
   --ink-soft: #674252;
@@ -15,7 +21,7 @@
   --line-strong: rgba(70, 38, 54, 0.68);
   --shadow: 8px 8px 0 var(--ink);
   --shadow-soft: 6px 6px 0 rgba(70, 38, 54, 0.18);
-  --font-display: 'Audiowide', 'Arial Black', sans-serif;
+  --font-display: 'SquareFont', 'Audiowide', 'Arial Black', sans-serif;
   --font-typewriter: 'Silkscreen', 'Courier New', monospace;
   --font-serif: var(--font-display);
   --font-sans: 'DM Sans', Arial, sans-serif;
